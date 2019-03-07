@@ -1,18 +1,12 @@
-letters = ['a', 'b', 'c']
+letters = ['a', 'b', 'c', 'c']
 
-# add
-letters.append('x')
-letters.insert(0, 'y')
-letters.insert(17, 'z')
+# find
+if 'd' in letters:
+    print(letters.index('d'))
 
-# remove
-letters.pop()
-letters.pop(1)
-letters.append('c')
-letters.remove('c')
-del(letters[0])
-del letters[1]
-letters.clear()
+if letters.count('c') > 0:
+    print(letters.index('c'))
+
 
 print(letters)
 print(len(letters))
