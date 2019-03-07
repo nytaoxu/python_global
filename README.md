@@ -1,3 +1,1 @@
-# python_global
-
-# Fizz Buzz Problem
+# Practice with Python list

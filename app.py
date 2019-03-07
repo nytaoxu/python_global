@@ -1,23 +1,23 @@
-def multiply(*numbers):
-    product = 1
-    for number in numbers:
-        product *= number
-    return product
-
-
-print("Start...")
-print(multiply(1, 2, 3))
-
-
-def fizz_buzz(number):
-    if number % 15 == 0:
-        return "FizzBuzz"
-    elif number % 3 == 0:
-        return "Fizz"
-    elif number % 5 == 0:
-        return "Buzz"
-    else:
-        return number
-
-
-print(fizz_buzz(16))
+zeros = [0] * 10
+print(zeros)
+matrix = [[1, 2], [3, 4]]
+print(matrix)
+print(matrix[0])
+print(matrix[1][1])
+print(type(matrix))
+combined = zeros + matrix
+print(combined)
+print(zeros, matrix)
+numbers = list(range(10))
+print(numbers)
+chars = list("Hello World")
+print(chars)
+print(chars[0:])
+print(chars[:-1])
+print(chars[::2])
+print(list(range(20)))
+x, y, *z = chars
+print(x, y, z)
+print(type(z))
+x, *y, z = chars
+print(x, y, z)
