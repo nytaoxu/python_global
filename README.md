@@ -1,1 +1,1 @@
-# Practice with Python list
+# Python list add & remove manipulation
