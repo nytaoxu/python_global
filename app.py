@@ -1,20 +1,22 @@
-numbers = [1, 1, 1, 2, 3, 3, 4, 5]
-first = set(numbers)
-second = set([1, 3, 7, 8, 9])
-print(first, second)
-print(first | second)
-print(first & second)
-print(first - second)
-print(first ^ second)
-
-x = set([])
-print(type(x))
-x.add(1)
-x.add(1.0)
-x.add('1.0')
-x.add('1')
-print(x)
-x.remove(1.0)
-print(x)
-for item in x:
-    print(item)
+point = {"x": 5, 'y': 7}
+print(point)
+point_alt = dict(x=5, y=7)
+print(point_alt)
+# print(point.x)
+print(point["y"])
+if 'a' in point:
+    print(point['a'])
+else:
+    print("No 'a' key.")
+print(point.get('a', 57))
+print(point)
+del(point['x'])
+print(point)
+point['z'] = 57
+for i in point:
+    print(i, point[i])
+for j in point.items():
+    print(type(j))
+    print(j)
+for key, value in point.items():
+    print(key, value)
