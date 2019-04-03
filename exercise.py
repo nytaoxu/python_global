@@ -1,3 +1,5 @@
+from pprint import pprint
+
 sentence = "This is a common interview question"
 dict = {}
 for letter in sentence:
@@ -19,3 +21,5 @@ for key, value in dict.items():
 
 print("The most common character is", result_key,
       ", and it appears", result_value, "times.")
+print(dict)
+pprint(dict)
