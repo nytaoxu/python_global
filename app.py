@@ -1,32 +1,33 @@
-letters = ['a', 'b', 'c', 'c']
-
-# find
-if 'd' in letters:
-    print(letters.index('d'))
-
-if letters.count('c') > 0:
-    print(letters.index('c'))
-
-letters.sort(reverse=True)
-print(sorted(letters, reverse=True))
-print(letters)
-print(len(letters))
-
 items = [
-    ('a', 3),
-    ('b', 2),
-    ('c', 1)
+    ("Product 1", 10),
+    ('Product 2', 9),
+    ("Product 3", 12)
 ]
 
+prices = []
+for item in items:
+    prices.append(item[1])
 
-def sort_item(item):
-    return item[1]
+new_items = map(lambda item: item[1], items)
 
+u = list(new_items)
 
-print("items =", items)
-# items.sort(key=sort_item)
-# items.sort(key=lambda prarmeters:expression)
-items.sort(key=lambda item: item[0], reverse=True)
-print("itmes =", items)
+print(prices)
+print(new_items)
 
-print(5 * '*' * 3)
+for x in new_items:
+    print(x)
+prices = list(new_items)
+print(prices)
+print(u)
+
+filtered = list(filter(lambda item: item[1] >= 10, items))
+print(filtered)
+
+# comprehension
+# [expression] for item in items
+prices_alt = [item[1] for item in items]
+print(prices_alt)
+
+filtered_alt = [item for item in items if item[1] >= 10]
+print(filtered_alt)
