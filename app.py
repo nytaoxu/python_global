@@ -1,5 +1,5 @@
-point = (1, 2) * 3
-a = tuple([1, 2, 3])
-print(type(point))
-print(point)
-print(a)
+x = 5
+y = 7
+x, y = y, x
+print(x)
+print(y)
