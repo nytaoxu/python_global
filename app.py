@@ -1,8 +1,5 @@
-from collections import deque
-queue = deque([])
-queue.append(1)
-queue.append(2)
-queue.append(3)
-print(queue)
-print(queue.popleft())
-print(queue)
+point = (1, 2) * 3
+a = tuple([1, 2, 3])
+print(type(point))
+print(point)
+print(a)
