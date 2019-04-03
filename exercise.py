@@ -23,3 +23,4 @@ print("The most common character is", result_key,
       ", and it appears", result_value, "times.")
 print(dict)
 pprint(dict)
+pprint(sorted(dict.items(), key=lambda item: item[1], reverse=True)[0])
