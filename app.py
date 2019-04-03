@@ -28,3 +28,5 @@ print("items =", items)
 # items.sort(key=lambda prarmeters:expression)
 items.sort(key=lambda item: item[0], reverse=True)
 print("itmes =", items)
+
+print(5 * '*' * 3)
