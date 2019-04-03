@@ -1,22 +1,37 @@
-from sys import getsizeof
+numbers = [1, 2, 3]
+print(numbers)
+print(1, 2, 3)
+print((1, 2, 3))
+print(*numbers)
 
-values = []
-for item in range(5):
-    values.append(item * 2)
-print(values)
+print(list(range(5)))
+print([*range(5), *"abcxyz"])
 
-values_alt = [2 * item for item in range(5)]
-print(values_alt)
+first = {"x": 1}
+second = {"x": 2, "y": 3}
+combined = {**first, **second}
+print(combined)
+print({**second, **first})
 
-values_set = {2 * item for item in range(5)}
-print(values_set)
+# from sys import getsizeof
 
-values_dict = {item: item * 2 for item in range(5)}
-print(values_dict)
+# values = []
+# for item in range(5):
+#     values.append(item * 2)
+# print(values)
 
-values_generator = (item for item in range(50000))
-print(values_generator)
-print(getsizeof(values_generator))
+# values_alt = [2 * item for item in range(5)]
+# print(values_alt)
+
+# values_set = {2 * item for item in range(5)}
+# print(values_set)
+
+# values_dict = {item: item * 2 for item in range(5)}
+# print(values_dict)
+
+# values_generator = (item for item in range(50000))
+# print(values_generator)
+# print(getsizeof(values_generator))
 # print(len(values_generator))
 
 # point = {"x": 5, 'y': 7}
